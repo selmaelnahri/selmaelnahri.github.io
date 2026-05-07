@@ -5,7 +5,10 @@
     <body>
 
 
-
+        <div class="rec-header">
+        <span class="dot"></span>
+        REC <span id="timer">00:00:00</span>
+        </div>
 
 
         <div class="title">Recording Initiated</div>
@@ -20,12 +23,35 @@
             3. Greetings <br>
         </div>
 
+         <div class="eyeimg"><img src="eye.png" alt="eye"></div>
+
         <div class="box">
             RECORDING RECORDING <br>CONTINUES CONTINUES <br> CONTINUES CONTINUES <br> CONTINUES
         </div>
 
+    <script>
 
+        let seconds = 0;
 
+        function updateTimer() {
+
+            seconds++;
+
+            let hrs = String(Math.floor(seconds / 3600)).padStart(2, '0');
+
+            let mins = String(Math.floor((seconds % 3600) / 60)).padStart(2, '0');
+
+            let secs = String(seconds % 60).padStart(2, '0');
+
+            document.getElementById("timer").textContent =
+                `${hrs}:${mins}:${secs}`;
+        }
+
+        setInterval(updateTimer, 1000);
+
+    </script>
+
+    
 
 
     </body>
