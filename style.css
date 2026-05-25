@@ -3,6 +3,10 @@ body {
     padding-top: 70px;
 }
 
+img{
+    width: 100%;
+    display: block;
+}
 
 @font-face {
     font-family:"alt" ;
@@ -15,7 +19,6 @@ body {
 }
 
 .rec-header {
-
     position: fixed;
     top: 0;
     left: 0;
@@ -29,7 +32,6 @@ body {
 }
 
 .dot {
-
     width: 15px;
     height: 15px;
     background-color: red;
@@ -46,6 +48,20 @@ body {
     }
 }
 
+.side-panel {
+    position: fixed;
+    left: 20px;
+    top: 40%;
+    transform: translateY(-50%);
+    color: #e6e6e6;
+    font-family: harm;
+    font-size: 13px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
 div.title {
     font-family:"alt" ;
     color: #e6e6e6;
@@ -54,30 +70,19 @@ div.title {
     margin-left: 562px;
     margin-top: 300px;
 }
-div.contents {
-    font-family:"harm" ;
-    color: #e6e6e6;
-    font-size: 10px;
-    line-height: 10px;
-    margin-top: 100px;
-}
-    
+ 
 div.box {
     font-family:"harm";
     color: #e6e6e6;
     font-size: 20px;
     line-height: 30px;
-    margin-left: 100px;
-    margin-top: 400px;
     font-style: italic;
+    text-transform: uppercase;
+    margin-left: 450px;
+    margin-top: 400px;
     
 }
 
-div.container {
-    display: flex;
-    flex-wrap: wrap;
-
-}
 
 div.item {
     color: #e6e6e6;
@@ -85,6 +90,11 @@ div.item {
     font-size: 20px;
     margin-left: 562px;
     text-transform: uppercase;
+}
+
+.pink {
+    color: #ff0099;
+    text-shadow: 0 0 10px #ff0099;
 }
 
 div.item1 {
@@ -99,8 +109,15 @@ div.item1 {
     width: 8%;
     height: auto;
     margin-left: 350px;
-    margin-top: 200px;
+    margin-top: 150px;
 }
+
+
+div.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 div.width25 {
     width:25%;
@@ -108,4 +125,357 @@ div.width25 {
 
 div.width75 {
     width:75%;
+}
+
+div.width50 {
+    width: 40%;
+}
+
+div.vistext {
+    color: #e6e6e6;
+    font-family:"harm";
+    font-size: 20px;
+    text-indent: 40px;
+    margin-bottom: 16px; 
+    line-height: 1.5; 
+    text-align: justify;
+
+}
+
+div.vistitle {
+    color: #e6e6e6;
+    font-family:"alt";
+    font-size: 100px;
+    text-transform: uppercase;
+    padding-left: 130px;
+    padding-top: 290px;
+    line-height: 0.75;
+    text-indent: 40px;
+   
+}
+
+div.quote {
+    color: #ff0099;
+    font-family: "alt";
+    font-size: 140px;
+    text-transform: uppercase;
+    line-height: 0.75;
+    text-align: justify;
+    margin-top: 10px;
+    padding-left: 130px;
+    padding-right: 400px;
+}
+
+.eyeimg2 img {
+    width: 12%;
+    height: auto;
+    margin-left: 1300px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+div.box1 {
+    font-family:"harm";
+    color: #e6e6e6;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-left: 130px;
+    margin-top: 400px;
+    
+}
+
+div.box2 {
+    font-family:"harm";
+    color: #e6e6e6;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-left: 850px;
+    margin-top: 100px;
+    
+}
+
+div.box3 {
+    font-family:"harm";
+    color: #e6e6e6;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-left: 450px;
+    margin-top: 100px;
+    
+}
+
+div.box4 {
+    font-family:"harm";
+    color: #e6e6e6;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-left: 1400px;
+    margin-top: 100px;
+    
+}
+
+div.title1984 {
+    color: #e6e6e6;
+    font-family:"alt";
+    font-size: 80px;
+    text-transform: uppercase;
+    margin-left: 420px;
+    margin-top: 100px;
+}
+
+div.eyeimg3 {
+    width: 8%;
+    height: auto;
+    margin-top: 100px;
+    margin-left: -250px;
+}
+
+div.tv {
+    width: 80%;
+    height: auto;
+    margin-top: 200px;
+    margin-left: 160px;
+}
+
+div.box5 {
+    font-family:"harm";
+    color: #e6e6e6;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-left: 130px;
+    margin-top: 100px;
+    
+}
+
+div.box6 {
+    font-family:"harm";
+    color: #e6e6e6;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-left: 450px;
+    margin-top: 200px;
+    
+}
+
+div.eyeimg4 {
+    width: 10%;
+    height: auto;
+    margin-top: 200px;
+    margin-left: -250px;
+    transform: scaleX(-1);
+    
+}
+
+div.camimg {
+    width: 50%;
+    height: auto;
+    margin-left: -10px;
+    margin-top: 100px;
+    
+}
+
+div.eyeimg5 {
+    width: 7%;
+    height: auto;
+    margin-top: 300px;
+    
+    
+}
+
+div.camtext {
+    color: #e6e6e6;
+    font-family:"alt";
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-top: 450px;
+    margin-left: 250px;
+    text-align: justify;
+
+}
+
+div.box7 {
+    font-family:"harm";
+    color: #e6e6e6;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-left: 850px;
+    margin-top: 100px;
+
+}
+
+div.cctv1 {
+    width: 20%;
+    height: auto;
+    margin-top: 300px;
+    margin-left: -10px;
+    
+    
+}
+
+div.cctv2 {
+    width: 40.8%;
+    height: auto;
+    margin-top: 300px;
+    margin-left: 247.5px;
+    
+    
+}
+
+div.cctvtext {
+    color: #ff0099;
+    font-family:"alt";
+    font-size: 90px;
+    text-transform: uppercase;
+    text-align: justify;
+    margin-top: 220px;
+    line-height: 245px;
+    margin-left: 3px;
+
+}
+
+div.box8 {
+    font-family:"harm";
+    color: #e6e6e6;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-left: 680px;
+    margin-top: -795px;
+
+}
+
+div.box9 {
+    font-family:"harm";
+    color: #e6e6e6;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-left: 680px;
+    margin-top: 355px;
+
+}
+
+div.face {
+    width: 50%;
+    height: auto;
+    margin-left: 410px;
+    margin-top: 200px;
+}
+
+div.box10 {
+    font-family:"harm";
+    color: #e6e6e6;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-top: -600px;
+    margin-left: 130px;
+
+}
+
+div.box11 {
+    font-family:"harm";
+    color: #e6e6e6;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-left: 1400px;
+
+}
+
+div.text-section {
+    position: relative;
+    width: 100%;
+}
+
+div.survtext {
+    color: #e6e6e6;
+    font-family:"harm";
+    font-size: 40px;
+    text-indent: 40px;
+    line-height: 1.5; 
+    text-align: justify;
+    margin-top: 600px;
+    margin-bottom: 300px;
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+
+div.side-note {
+    position: absolute;
+    margin-left: 1600px;
+    margin-top: 15px;
+    top: 0;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-family: "harm";
+    font-size: 14px;
+    color: #e6e6e6;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+div.eyeimg6 {
+    width: 7%;
+    height: auto;
+    margin-top: -370px;
+    margin-left: 870px;
+}
+
+
+div.surveillance-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+    padding-top: 100px;
+    padding-left: 130px;
+}
+
+div.codeimg {
+    width: 40%;
+    height: auto;
+    margin-top: 200px;
+}
+
+
+div.box12 {
+    font-family:"harm";
+    color: #e6e6e6;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-top: 200px;
+    
+}
+
+div.box13 {
+    font-family:"harm";
+    color: #e6e6e6;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-top: 200px;
+   
 }
