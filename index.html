@@ -44,33 +44,31 @@
         </div>
 
 
-
-        <div class="container">
-            <div class="width50 vistitle">
-                Visibility is <br>
-                Control  
-            </div>
-            
-            <div class="width50 vistext">
+        <div class="text-section1">
+            <div class="vistext">
                 <p>
                     Surveillance was once imagined as a distant dystopia. A world where screens watched back and voices were never entirely private. In Nineteen Eighty-Four, observation was constant and invisible, embedded into the architecture of everyday life. Citizens could never know when they were being watched, only that they might be.
                 </p>
-
                 <p>
                     Today the mechanisms are quieter, but the logic remains familiar. Cameras line streets and buildings, algorithms trace behaviour, and systems quietly record the rhythms of daily life. Observation no longer feels extraordinary. It has become part of the background.
                 </p>
-
                 <p>
-                    What Orwell understood was not simply the danger of technology, but the psychology of being watched. When visibility becomes permanent, behaviour changes. People learn to regulate themselves, adjusting actions and words in response to the possibility of observation.
-                </p>
-            </div>
-
+                    What Orwell understood was not simply the danger of technology, but the psychology of being watched. When visibility becomes permanent, behaviour changes. People learn to regulate themselves, adjusting actions and words in response to the possibility of observation.                </p>
         </div>
+
        
         <div class="eyeimg2"><img src="eye.png" alt="eye"></div>
 
-        <div class="quote">
-            “There was no way of knowing whether you were being watched.”
+
+        <div class="quote-container">
+            <div class="quote">
+                “There was no way of knowing whether you were being watched.”
+            </div>div>    
+
+            <div class="side-note1">
+                GEORGE ORWELL, 1984
+            </div>   
+        </div> 
 
         </div>
 
@@ -119,13 +117,33 @@
             </div>
         </div>    
         
-        <div class="tv"><img src="tv.png" alt="tv"></div>
+
+        <div class="tv-container">
+                <video id="webcam" autoplay playsinline></video>
+                <img src="tv.png" class="tv-frame">
+        </div>
+
+        <script>
+            const video = document.getElementById("webcam");
+
+            navigator.mediaDevices.getUserMedia({ video: true })
+            .then(stream => {
+                video.srcObject = stream;
+            })
+            .catch(err => {
+                console.log("Camera error:", err);
+            });
+        </script>
+
+        
 
         <div class="box5">
-            Good good <br> 
-            morning [enter name]<br>
+            Good good <br>
+            morning
+            <input type="text" id="username" placeholder="ENTER NAME">
+            <br>
             I can see you you<br>
-            you you you you <br>  
+            you you you you <br>
             you you you <br>
             you you you you <br>
             you
@@ -246,28 +264,30 @@
         <div class="surveillance-layout">
 
             <div class="box12 width25">
-                Good good <br> 
-                morning [enter name]<br>
-                We can see you you<br>
-                you you you you <br>  
-                you you you <br>
-                you you you you <br>
-                you
+                SYS.LOG.2048 <br>
+                <span class="highlight">COORD: 37.8136 S</span> <br>
+                <span class="highlight">COORD: 144.9631 E</span> <br>
+                CAM_01_ACTIVE <br>
+                <span class="highlight">CAM_03_FEED_LIVE</span> <br>
+                SUBJECT_ID: 00491 <br>
+                FRAME_CAPTURED <br>
+                ARCHIVE_NODE_7 <br>
+                DATA_PACKET_RECEIVED <br>
+                <span class="highlight">BIOMETRIC_SCAN_ACTIVE</span> <br>
+                <span class="highlight">PATTERN_MATCH_DETECTED</span> <br>
+                <span class="highlight">SUBJECT_TAGGED</span>
             </div>
 
             <div class="box13 width25">
-                SYS.LOG.2048 <br> 
-                COORD: 37.8136 S <br> 
-                COORD: 144.9631 E <br> 
-                CAM_01_ACTIVE <br> 
-                CAM_03_FEED_LIVE <br> 
-                SUBJECT_ID: 00491 <br> 
-                FRAME_CAPTURED <br> 
-                ARCHIVE_NODE_7 <br> 
-                DATA_PACKET_RECEIVED <br> 
-                BIOMETRIC_SCAN_ACTIVE <br> 
-                PATTERN_MATCH_DETECTED <br> 
-                SUBJECT_TAGGED
+            Good good <br>
+            morning
+            <input type="text" id="username" placeholder="ENTER NAME">
+            <br>
+            We can see you you<br>
+            you you you you <br>
+            you you you <br>
+            you you you you <br>
+            you
             </div>
 
             <div class="codeimg width50">
@@ -276,6 +296,7 @@
 
         </div>
 
+        
 
     <script>
 

@@ -18,6 +18,7 @@ img{
     src: url(harmoniasansregular.woff) format("woff");
 }
 
+
 .rec-header {
     position: fixed;
     top: 0;
@@ -27,7 +28,7 @@ img{
     font-family: "alt";
     font-size: 18px;
     padding: 15px 20px;
-    z-index: 9999;
+    z-index: 999999;
     backdrop-filter: blur(5px);
 }
 
@@ -59,6 +60,7 @@ img{
     line-height: 26px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    z-index: 999;
 }
 
 
@@ -131,27 +133,27 @@ div.width50 {
     width: 40%;
 }
 
+div.text-section1 {
+    position: relative;
+    width: 100%;
+}
+
 div.vistext {
     color: #e6e6e6;
     font-family:"harm";
-    font-size: 20px;
+    font-size: 40px;
     text-indent: 40px;
-    margin-bottom: 16px; 
     line-height: 1.5; 
     text-align: justify;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    margin-left: 150px;
+    margin-right: 150px;
 
 }
 
-div.vistitle {
-    color: #e6e6e6;
-    font-family:"alt";
-    font-size: 100px;
-    text-transform: uppercase;
-    padding-left: 130px;
-    padding-top: 290px;
-    line-height: 0.75;
-    text-indent: 40px;
-   
+.quote-container {
+    position: relative;
 }
 
 div.quote {
@@ -165,6 +167,21 @@ div.quote {
     padding-left: 130px;
     padding-right: 400px;
 }
+
+.side-note1 {
+    position: absolute;
+    top: 10;
+    right: 350px;
+    font-family: "harm";
+    font-size: 14px;
+    color: #e6e6e6;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    max-width: 150px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
 
 .eyeimg2 img {
     width: 12%;
@@ -182,7 +199,7 @@ div.box1 {
     font-style: italic;
     text-transform: uppercase;
     margin-left: 130px;
-    margin-top: 400px;
+    margin-top: 300px;
     
 }
 
@@ -278,13 +295,6 @@ div.eyeimg4 {
     
 }
 
-div.camimg {
-    width: 50%;
-    height: auto;
-    margin-left: -10px;
-    margin-top: 100px;
-    
-}
 
 div.eyeimg5 {
     width: 7%;
@@ -322,6 +332,8 @@ div.cctv1 {
     height: auto;
     margin-top: 300px;
     margin-left: -10px;
+    position: relative;
+    z-index: 1;
     
     
 }
@@ -331,6 +343,8 @@ div.cctv2 {
     height: auto;
     margin-top: 300px;
     margin-left: 247.5px;
+    position: relative;
+    z-index: 1;
     
     
 }
@@ -465,7 +479,7 @@ div.box12 {
     line-height: 30px;
     font-style: italic;
     text-transform: uppercase;
-    margin-top: 200px;
+    margin-top: 800px;
     
 }
 
@@ -479,3 +493,72 @@ div.box13 {
     margin-top: 200px;
    
 }
+
+#username {
+    background: transparent;
+    border: none;
+    color: #e6e6e6;
+    font-family: "harm";
+    font-size: inherit;
+    outline: none;
+    width: 140px;
+}
+
+#username {
+    animation: flashPlaceholder 1s infinite;
+}
+
+#username:focus,
+#username:not(:placeholder-shown) {
+    animation: none;
+}
+
+
+#username::placeholder {
+    color: #ff0099;
+    animation: flashPlaceholder 1s infinite;
+    opacity: 1;
+}
+
+@keyframes flashPlaceholder {
+    50% {
+        opacity: 0;
+    }
+}
+
+.highlight {
+    color: #42529f;
+}
+
+.tv-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 320px; 
+  z-index: 9999
+}
+
+
+.tv-frame {
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+
+#webcam {
+  position: absolute;
+  top: 18%;
+  left: 15%;
+  width: 70%;
+  height: 55%;
+  object-fit: cover;
+  z-index: 999;
+  filter: grayscale(1) contrast(2) brightness(0.6);;
+  transform: translateZ(0);;
+}
+
+
+
+
