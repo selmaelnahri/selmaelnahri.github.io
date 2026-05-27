@@ -2,8 +2,25 @@
     <head>
         <link rel="stylesheet" href="style.css">
     </head>
+    
     <body>
 
+        <div id="intro-screen">
+
+            <div id="intro-text">
+                Surveillance was once imagined as a distant dystopia.
+            </div>
+
+            <div id="skip-intro">
+                OVERRIDE SEQUENCE
+            </div>
+            
+
+        </div>
+
+        
+
+<div id="website-content">
 
         <div class="rec-header">
         <span class="dot"></span>
@@ -42,22 +59,6 @@
             Continues  
 
         </div>
-
-
-        <div class="text-section1">
-            <div class="vistext">
-                <p>
-                    Surveillance was once imagined as a distant dystopia. A world where screens watched back and voices were never entirely private. In Nineteen Eighty-Four, observation was constant and invisible, embedded into the architecture of everyday life. Citizens could never know when they were being watched, only that they might be.                </p>
-                <p>
-                    Today the mechanisms are quieter, but the logic remains familiar. Cameras line streets and buildings, algorithms trace behaviour, and systems quietly record the rhythms of daily life. Observation no longer feels extraordinary. It has become part of the background.
-                </p>
-                <p>
-                    What Orwell understood was not simply the danger of technology, but the psychology of being watched. When visibility becomes permanent, behaviour changes. People learn to regulate themselves, adjusting actions and words in response to the possibility of observation. Yet contemporary surveillance culture is no longer built only on fear or control. Visibility has also become participatory. People perform for cameras, livestream their lives, and construct identities through systems designed to observe them.
-                </p>
-            </div>
-
-        <div class="eyeimg22"><img src="eye.png" alt="eye"></div>
-
 
 
         <div class="quote-container">
@@ -111,7 +112,7 @@
 
         <div class="container">
             <div class="width75 title1984">
-                It's not 1984 anymore. 
+                It's not <span id="yearCountdown">2026</span> anymore. 
             </div>
 
             <div class="width25 eyeimg3">
@@ -119,6 +120,44 @@
             </div>
         </div>    
         
+        <script>
+            const el = document.getElementById("yearCountdown");
+
+            let started = false;
+
+            function startCountdown() {
+                if (started || !el) return;
+                started = true;
+
+                let year = 2026;
+                const target = 1984;
+
+                el.textContent = year;
+
+                const interval = setInterval(() => {
+                    year--;
+                    el.textContent = year;
+
+                    if (year <= target) {
+                        el.textContent = target;
+                        clearInterval(interval);
+                    }
+                }, 120);
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        startCountdown();
+                    }
+                });
+            }, {
+                threshold: 0.6   // triggers when 60% of element is visible
+            });
+
+            observer.observe(document.querySelector(".title1984"));
+        </script>
+
 
         <div class="tv-container">
                 <video id="webcam" autoplay playsinline></video>
@@ -217,8 +256,27 @@
             </div>
         </div>
         
+        <div class="face-grid">
 
-        <div class="face"><img src="face.png" alt="facial recognition"></div>
+            <div class="face-box">
+                <img class="img1" src="face1.png">
+                <img class="img2" src="face2.png">
+                <img class="img3" src="face3.png">
+            </div>
+
+            <div class="face-box">
+                <img class="img1" src="face1.png">
+                <img class="img2" src="face2.png">
+                <img class="img3" src="face3.png">
+            </div>
+
+            <div class="face-box">
+                <img class="img1" src="face1.png">
+                <img class="img2" src="face2.png">
+                <img class="img3" src="face3.png">
+            </div>
+
+        </div>
 
         <div class="box10">
             Subject has been detected <br> 
@@ -276,17 +334,18 @@
         </div> 
 
          <div class="box13">
-            People once feared <br>
-            being watched watched<br>
-            watched <br>
-            watched watched
+            What was control <br>
+            control control control<br>
+            control <br>
+            control control
         </div>
 
 
         <div class="box14">
-            Now they learn <br>
-            to be seen <br>
-            seen seen seen seen
+            Is now now <br>
+            content content <br>
+            content content content <br>
+            content
         </div>
        
         <div class="eyeimg7"><img src="eye.png" alt="eye"></div>
@@ -337,7 +396,7 @@
 
         <div class="eyeimg9"><img src="eye.png" alt="eye"></div>
 
-        
+
 
         <script>
 
@@ -354,30 +413,89 @@
 
         </script>
 
-    <script>
+        <script>
 
-        let seconds = 0;
+            let seconds = 0;
 
-        function updateTimer() {
+            function updateTimer() {
 
-            seconds++;
+                seconds++;
 
-            let hrs = String(Math.floor(seconds / 3600)).padStart(2, '0');
+                let hrs = String(Math.floor(seconds / 3600)).padStart(2, '0');
 
-            let mins = String(Math.floor((seconds % 3600) / 60)).padStart(2, '0');
+                let mins = String(Math.floor((seconds % 3600) / 60)).padStart(2, '0');
 
-            let secs = String(seconds % 60).padStart(2, '0');
+                let secs = String(seconds % 60).padStart(2, '0');
 
-            document.getElementById("timer").textContent =
-                `${hrs}:${mins}:${secs}`;
-        }
+                document.getElementById("timer").textContent =
+                    `${hrs}:${mins}:${secs}`;
+            }
 
-        setInterval(updateTimer, 1000);
+            setInterval(updateTimer, 1000);
 
-    </script>
+        </script>
 
-    
+        <script>
 
+            const messages = [
+                "Surveillance was once imagined as a distant dystopia.",
+                "Screens watched back.",
+                "Observation became part of the background.",
+                "People once feared being watched.",
+                "Now they learn to be seen."
+            ];
+
+            let current = 0;
+
+            const introText = document.getElementById("intro-text");
+
+            const interval = setInterval(() => {
+
+                current++;
+
+                if (current < messages.length) {
+
+                    introText.textContent = messages[current];
+
+                } else {
+
+                    clearInterval(interval);
+
+                    introText.innerHTML =
+                    '<span id="enter-archive">ENTER ARCHIVE</span>';
+
+                    document.getElementById("enter-archive")
+                    .addEventListener("click", () => {
+                        document.getElementById("intro-screen").style.display = "none";
+                        document.getElementById("website-content").style.display = "block";
+                        document.body.style.overflow = "auto";
+                    });
+
+                }
+
+            }, 2500);
+
+        </script>  
+
+        <script>
+
+            document.getElementById("skip-intro")
+            .addEventListener("click", () => {
+
+                clearInterval(interval);
+
+                document.getElementById("intro-screen").style.display = "none";
+
+                document.getElementById("website-content").style.display = "block";
+
+                document.body.style.overflow = "auto";
+
+            });
+
+        </script>
+
+
+</div>
 
     </body>
 </html>
