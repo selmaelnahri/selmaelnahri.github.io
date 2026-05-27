@@ -141,16 +141,24 @@ div.text-section1 {
 div.vistext {
     color: #e6e6e6;
     font-family:"harm";
-    font-size: 40px;
+    font-size: 30px;
     text-indent: 40px;
     line-height: 1.5; 
     text-align: justify;
-    margin-top: 300px;
-    margin-bottom: 300px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-left:700px;
+    margin-right: 100px;
 
 }
+
+div.eyeimg22 {
+    width: 7%;
+    height: auto;
+    margin-top: -260px;
+    margin-left: 790px;
+}
+
 
 .quote-container {
     position: relative;
@@ -163,7 +171,7 @@ div.quote {
     text-transform: uppercase;
     line-height: 0.75;
     text-align: justify;
-    margin-top: 10px;
+    margin-top: 200px;
     padding-left: 130px;
     padding-right: 400px;
 }
@@ -188,7 +196,7 @@ div.quote {
     height: auto;
     margin-left: 1300px;
     margin-top: 100px;
-    margin-bottom: 100px;
+   
 }
 
 div.box1 {
@@ -199,7 +207,7 @@ div.box1 {
     font-style: italic;
     text-transform: uppercase;
     margin-left: 130px;
-    margin-top: 300px;
+    margin-top: 200px;
     
 }
 
@@ -301,17 +309,17 @@ div.eyeimg5 {
     height: auto;
     margin-top: 300px;
     
-    
 }
 
-div.camtext {
+
+div.box07 {
+    font-family:"harm";
     color: #e6e6e6;
-    font-family:"alt";
-    font-size: 50px;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
     text-transform: uppercase;
-    margin-top: 450px;
-    margin-left: 250px;
-    text-align: justify;
+    margin-left: 1400px;
 
 }
 
@@ -327,63 +335,40 @@ div.box7 {
 
 }
 
-div.cctv1 {
-    width: 20%;
-    height: auto;
-    margin-top: 300px;
-    margin-left: -10px;
+.cctv-wrapper {
     position: relative;
-    z-index: 1;
-    
-    
+    width: 100%;
+    margin-top: 200px; 
 }
 
-div.cctv2 {
-    width: 40.8%;
+.cctv-bg {
+    width: 100%;
     height: auto;
-    margin-top: 300px;
-    margin-left: 247.5px;
-    position: relative;
-    z-index: 1;
-    
-    
+    display: block;
 }
 
-div.cctvtext {
-    color: #ff0099;
-    font-family:"alt";
-    font-size: 90px;
-    text-transform: uppercase;
-    text-align: justify;
-    margin-top: 220px;
-    line-height: 245px;
-    margin-left: 3px;
-
-}
-
-div.box8 {
-    font-family:"harm";
+.cctv-wrapper .box8,
+.cctv-wrapper .box9 {
+    position: absolute;
     color: #e6e6e6;
+    font-family: "harm";
     font-size: 20px;
     line-height: 30px;
     font-style: italic;
     text-transform: uppercase;
-    margin-left: 680px;
-    margin-top: -795px;
-
 }
 
-div.box9 {
-    font-family:"harm";
-    color: #e6e6e6;
-    font-size: 20px;
-    line-height: 30px;
-    font-style: italic;
-    text-transform: uppercase;
-    margin-left: 680px;
-    margin-top: 355px;
 
+.cctv-wrapper .box8 {
+    margin-left: 450px;
+    margin-top: -650px;
 }
+
+.cctv-wrapper .box9 {
+    margin-left: 850px;
+    margin-top: -400px;
+}
+
 
 div.face {
     width: 50%;
@@ -423,20 +408,20 @@ div.text-section {
 div.survtext {
     color: #e6e6e6;
     font-family:"harm";
-    font-size: 40px;
+    font-size: 30px;
     text-indent: 40px;
     line-height: 1.5; 
     text-align: justify;
     margin-top: 600px;
     margin-bottom: 300px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 700px;
+    margin-right: 100px;
 
 }
 
 div.side-note {
     position: absolute;
-    margin-left: 1600px;
+    margin-left: 1620px;
     margin-top: 15px;
     top: 0;
     writing-mode: vertical-rl;
@@ -452,17 +437,8 @@ div.side-note {
 div.eyeimg6 {
     width: 7%;
     height: auto;
-    margin-top: -370px;
-    margin-left: 870px;
-}
-
-
-div.surveillance-layout {
-    display: flex;
-    align-items: flex-start;
-    gap: 80px;
-    padding-top: 100px;
-    padding-left: 130px;
+    margin-top: -360px;
+    margin-left: 1000px;
 }
 
 div.codeimg {
@@ -471,7 +447,6 @@ div.codeimg {
     margin-top: 200px;
 }
 
-
 div.box12 {
     font-family:"harm";
     color: #e6e6e6;
@@ -479,18 +454,8 @@ div.box12 {
     line-height: 30px;
     font-style: italic;
     text-transform: uppercase;
-    margin-top: 800px;
-    
-}
-
-div.box13 {
-    font-family:"harm";
-    color: #e6e6e6;
-    font-size: 20px;
-    line-height: 30px;
-    font-style: italic;
-    text-transform: uppercase;
     margin-top: 200px;
+    margin-left: 450px;
    
 }
 
@@ -560,5 +525,148 @@ div.box13 {
 }
 
 
+.quote-container2 {
+    position: relative;
+}
+
+div.quote2 {
+    color: #ff0099;
+    font-family: "alt";
+    font-size: 140px;
+    text-transform: uppercase;
+    line-height: 0.75;
+    text-align: justify;
+    margin-top: 200px;
+    padding-left: 130px;
+    padding-right: 800px;
+}
+
+.side-note2 {
+    position: absolute;
+    top: 10;
+    right: 750px;
+    font-family: "harm";
+    font-size: 14px;
+    color: #e6e6e6;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    max-width: 150px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+div.box13 {
+    font-family:"harm";
+    color: #e6e6e6;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-top: 200px;
+    margin-left: 1400px;
+
+   
+}
+
+div.box14 {
+    font-family:"harm";
+    color: #e6e6e6;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-top: 200px;
+    margin-left: 850px;
+
+}
+
+.eyeimg7 img {
+    width: 12%;
+    height: auto;
+    margin-left: 100px;
+    margin-top: -400px;
+}
+
+.tt-wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: 500px; 
+}
+
+.tt-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tt-wrapper .box15 {
+    position: absolute;
+    color: #e6e6e6;
+    font-family: "harm";
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-left: 450px;
+    margin-top: -650px;
+}
+
+.viewers {
+    color: #e6e6e6;
+    font-family:"alt";
+    font-size: 80px;
+    text-transform: uppercase;
+    margin-left: 420px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+div.eyeimg8 {
+    width: 8%;
+    height: auto;
+    margin-top: 100px;
+    margin-left: -380px;
+}
+
+div.text-section2 {
+    position: relative;
+    width: 100%;
+}
+
+div.survtext2 {
+    color: #e6e6e6;
+    font-family:"harm";
+    font-size: 30px;
+    text-indent: 40px;
+    line-height: 1.5; 
+    text-align: justify;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-left: 700px;
+    margin-right: 100px;
+
+}
+
+div.side-note3 {
+    position: absolute;
+    margin-left: 1620px;
+    margin-top: 15px;
+    top: 0;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-family: "harm";
+    font-size: 14px;
+    color: #e6e6e6;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+div.eyeimg9 {
+    width: 7%;
+    height: auto;
+    margin-top: -260px;
+    margin-left: 1220px;
+}
 
 
