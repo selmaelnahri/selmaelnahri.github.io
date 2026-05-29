@@ -140,6 +140,7 @@ body {
     text-transform: uppercase;
     z-index: 999;
     transition: 0.3s;
+
 }
 
 .side-panel a {
@@ -174,7 +175,7 @@ html {
 #performance,
 #archive {
 
-    scroll-margin-top: 315px;
+    scroll-margin-top: 283px;
 }
 
 .center-block {
@@ -201,8 +202,8 @@ div.box {
     font-style: italic;
     text-transform: uppercase;
     margin-left: 850px;
-    margin-top: 400px;
-    margin-bottom: 200px;
+    margin-top: 300px;
+    margin-bottom: -100px;
     
 }
 
@@ -398,6 +399,7 @@ div.box6 {
     text-transform: uppercase;
     margin-left: 450px;
     margin-top: 200px;
+    margin-bottom: 100px;
     
 }
 
@@ -423,7 +425,7 @@ div.eyeimg4 {
 
 #camToggle.phone {
     width: 500px;
-  margin-top: -56px;
+  margin-top: -144px;
   margin-left: -100px;
 }
 
@@ -554,7 +556,7 @@ div.box10 {
     line-height: 30px;
     font-style: italic;
     text-transform: uppercase;
-    margin-top: -480px;
+    margin-top: -500px;
     margin-left: 130px;
 
 }
@@ -567,7 +569,7 @@ div.box11 {
     font-style: italic;
     text-transform: uppercase;
     margin-left: 1400px;
-    margin-top: 400px;
+    margin-top: 500px;
 
 }
 
@@ -803,7 +805,7 @@ div.box14 {
 div.eyeimg8 {
     width: 8%;
     height: auto;
-    margin-top: 120px;
+    margin-top: 125px;
     margin-left: -380px;
 }
 
@@ -910,7 +912,7 @@ div.eyeimg9 {
     height: auto;
     cursor: pointer;
     transform: scaleX(-1);
-    margin-left: 900px;
+    margin-left: 1020px;
     margin-top: -700px;
 
     filter: drop-shadow(0 0 0 transparent);
@@ -924,7 +926,7 @@ div.eyeimg9 {
 
 #camToggle1.vlog {
     width: 800px;
-    margin-top: -951.5px;
+    margin-top: -913px;
 }
 
 div.box16 {
@@ -1004,8 +1006,8 @@ div.box16 {
 }
 
 .termination-screen {
-    margin-top: 150px;
-    margin-bottom: 400px;
+    margin-top: 250px;
+    margin-bottom: 330px;
 }
 
 .termination-title {
