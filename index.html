@@ -28,35 +28,59 @@
         </div>
 
         <div class="side-panel">
-            Sys_01 <br>
-            Archive_Node <br>
-            Live_Feed <br>
-            Obs_Log <br>
-            Trnsmssn <br>
-            Subject_DB <br>
-            Rec_Files <br>
-            Cam_Net <br>
-            Signal.Log
-
+            <a href="#observation">OBS_NODE</a><br>
+            <a href="#identification">ID_SCAN</a><br>
+            <a href="#transmission">TRNSM.SN</a><br>
+            <a href="#performance">PER40RM</a><br>
+            <a href="#archive">ARCHIV.3</a>
         </div>
 
-        <div class="title">Recording Initiated</div>
 
-        <div class="item">Archive File: Earth </div>
+        <div class="center-block">
 
-        <div class="item">
-            Status: <span class="pink">Active</span>
+            <div class="title">Recording Initiated</div>
+
+            <div class="item">Archive File: Earth</div>
+
+            <div class="item1">Status: <span class="pink">Active</span></div>
+
+            <div class="item2">January 1, 1984</div>
+
+            <div class="eyeimg"><img src="eye.png" alt="eye"></div>
+
         </div>
-
-        <div class="item1">January 1, 1984</div>
-
-        <div class="eyeimg"><img src="eye.png" alt="eye"></div>
 
         <div class="box">
             Recording Recording <br> 
             Continues Continues <br>
             Continues Continues <br>
             Continues  
+        </div>    
+
+    <div id="observation">    
+        <div class="section-text observation-text">
+            Observation became embedded within everyday life.
+            Cameras and monitoring systems transformed visibility
+            into a method of control, shaping behaviour through
+            the possibility of being watched.
+        </div>
+
+        <div class="eyeimg6"><img src="eye.png" alt="eye"></div>
+
+        <div class="text-section">
+            <div class="survtext">
+                <p>
+                    Surveillance has long been linked to systems of social control. While monitoring technologies are often introduced in the name of safety or efficiency, they also reshape the relationship between individuals and power.
+                </p>
+                <p>
+                    As surveillance becomes embedded within everyday environments, observation shifts from an occasional event to a continuous condition of modern life. Cameras, digital networks, and data systems record behaviour across public and private spaces, producing vast archives of information about individuals and their movements.
+                </p>
+            </div>
+
+
+            <div class="side-note">
+            Michel Foucault, "Discipline and Punish" <br> Pantheon Books, 1975.
+            </div>
 
         </div>
 
@@ -210,7 +234,7 @@
 
         <div class="container">
             <div class="width50 camimg">
-                <img src="seccam.png" alt="security camera">
+                <img id="camToggle" src="seccam.png" alt="security camera">
             </div>
 
             <div class="width25 eyeimg5">
@@ -224,8 +248,25 @@
                 protect
             </div>
 
-
         </div>    
+
+        <script>
+            const cam = document.getElementById("camToggle");
+
+            let isPhone = false;
+
+            cam.addEventListener("click", () => {
+                isPhone = !isPhone;
+
+                if (isPhone) {
+                    cam.src = "phone.png";
+                    cam.classList.add("phone");
+                } else {
+                    cam.src = "seccam.png";
+                    cam.classList.remove("phone");
+                }
+            });
+        </script>    
 
         <div class="box7">
             They stayed to<br> 
@@ -239,6 +280,10 @@
 
          <div class="cctv-wrapper">
             <img src="cctv.png" class="cctv-bg" alt="cctv">
+
+            <div class="detect-box box-a"></div>
+            <div class="detect-box box-b"></div>
+            <div class="detect-box box-c"></div>
 
             <div class="box8">
                 Camera active active<br> 
@@ -278,6 +323,7 @@
 
         </div>
 
+
         <div class="box10">
             Subject has been detected <br> 
             detected detected <br>
@@ -291,22 +337,15 @@
             captured captured captured <br>
             captured captured 
         </div>
+    </div>
+    
+    
 
-        <div class="text-section">
-            <div class="survtext">
-                <p>
-                    Surveillance has long been linked to systems of social control. While monitoring technologies are often introduced in the name of safety or efficiency, they also reshape the relationship between individuals and power.
-                </p>
-                <p>
-                    As surveillance becomes embedded within everyday environments, observation shifts from an occasional event to a continuous condition of modern life. Cameras, digital networks, and data systems record behaviour across public and private spaces, producing vast archives of information about individuals and their movements.
-                </p>
-            </div>
-
-
-            <div class="side-note">
-            Michel Foucault, "Discipline and Punish" <br> Pantheon Books, 1975.
-            </div>
-
+    <div id="identification">
+        <div class="section-text identify-text">
+            Facial recognition systems convert identity into data.
+            Faces become patterns, measurements, and searchable
+            information within digital archives.
         </div>
 
         <div class="eyeimg6"><img src="eye.png" alt="eye"></div>
@@ -322,6 +361,17 @@
             you you you you <br>
             you
         </div>
+    </div>
+    
+    
+    <div id="transmission">
+        <div class="section-text transmission-text">
+            Broadcast technologies once promised global connection
+            and communication. Contemporary media systems continue
+            this through constant streams of images, recordings,
+            and live content.
+        </div>
+
 
         <div class="quote-container2">
             <div class="quote2">
@@ -351,7 +401,12 @@
         <div class="eyeimg7"><img src="eye.png" alt="eye"></div>
         
         <div class="tt-wrapper">
-            <img src="tt.png" class="cctv-bg" alt="tiktok videos">
+            <img src="tt.png" class="tt-bg" alt="tiktok videos">
+
+            <div class="detect-box box-a"></div>
+            <div class="detect-box box-b"></div>
+            <div class="detect-box box-c"></div>
+
 
             <div class="box15">
                 You enjoy <br> 
@@ -372,6 +427,17 @@
                 <img src="eye.png" alt="eye">
             </div>
         </div>    
+    </div>
+    
+    <div id="performance">
+        <div class="section-text performance-text">
+            Visibility is no longer only imposed. Cameras now
+            function as tools for performance, identity, and
+            self-presentation, encouraging participation within
+            systems of observation.
+        </div>
+
+        <div class="eyeimg9"><img src="eye.png" alt="eye"></div>
 
         <div class="text-section2">
             <div class="survtext2">
@@ -394,9 +460,84 @@
 
         </div>
 
-        <div class="eyeimg9"><img src="eye.png" alt="eye"></div>
+        <div class="width50 camimg">
+            <img id="camToggle1" src="seccam.png" alt="security camera">
+         </div>
+      
+         
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const cam = document.getElementById("camToggle1");
+
+                let isVlog = false;
+
+                cam.addEventListener("click", () => {
+                    isVlog = !isVlog;
+
+                    cam.src = isVlog ? "vlog.png" : "seccam.png";
+                    cam.classList.toggle("vlog", isVlog);
+                });
+            });
+        </script>
+        
+    </div>    
+
+    <div class="box16">
+        Archive active active <br>
+        active active  <br>
+        active active active <br>
+        active  
+    </div>
 
 
+
+    <div id="archive">
+        <div class="section-text archive-text">
+            Digital systems continuously store fragments of everyday life, transforming ordinary actions into permanent records that cannot be reversed.
+        </div>
+
+        <div class="eyeimg10"><img src="eye.png" alt="eye"></div>
+
+        <div class="center-block termination-screen">
+
+            <div class="termination-title">
+                Recording Terminated
+            </div>
+
+            <div class="termination-file">
+                File Archived.
+            </div>
+
+            <div class="termination-status">
+                System returning to passive observation.
+            </div>
+
+            <div class="termination-date" id="liveDate">
+                APRIL 13, 2026
+            </div>
+
+
+            <script>
+
+                const dateEl = document.getElementById("liveDate");
+
+                const today = new Date();
+
+                const options = {
+                    month: "long",
+                    day: "numeric",
+                    year: "numeric"
+                };
+
+                dateEl.textContent =
+                    today.toLocaleDateString("en-US", options).toUpperCase();
+
+            </script>
+
+        </div>    
+
+    </div>    
 
         <script>
 
@@ -414,75 +555,129 @@
         </script>
 
         <script>
-
             let seconds = 0;
+            let isRunning = true;
 
+            // TIMER
             function updateTimer() {
-
                 seconds++;
 
                 let hrs = String(Math.floor(seconds / 3600)).padStart(2, '0');
-
                 let mins = String(Math.floor((seconds % 3600) / 60)).padStart(2, '0');
-
                 let secs = String(seconds % 60).padStart(2, '0');
 
                 document.getElementById("timer").textContent =
                     `${hrs}:${mins}:${secs}`;
             }
 
-            setInterval(updateTimer, 1000);
+            // RUN LOOP (shared system state)
+            setInterval(() => {
+                if (isRunning) {
+                    updateTimer();
+                }
+            }, 1000);
 
+            // OBSERVER (controls EVERYTHING)
+            const archiveSection = document.querySelector(".termination-screen");
+
+            const systemObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    isRunning = !entry.isIntersecting;
+
+                    // REC DOT sync state
+                    const dot = document.querySelector(".dot");
+
+                    if (entry.isIntersecting) {
+                        dot.style.animation = "none";
+                        dot.style.opacity = "1";
+                    } else {
+                        dot.style.animation = "blink 1s infinite";
+                    }
+                });
+            }, {
+                threshold: 0.6
+            });
+
+            systemObserver.observe(archiveSection);
         </script>
 
         <script>
 
             const messages = [
-                "Surveillance was once imagined as a distant dystopia.",
-                "Screens watched back.",
-                "Observation became part of the background.",
-                "People once feared being watched.",
-                "Now they learn to be seen."
-            ];
 
-            let current = 0;
+                "Surveillance was once imagined as a distant dystopia.",
+
+                "Screens watched back.",
+
+                "Observation became part of the background.",
+
+                "People once feared being watched.",
+
+                "Now they learn to be seen."
+
+            ];
 
             const introText = document.getElementById("intro-text");
 
-            const interval = setInterval(() => {
+            let messageIndex = 0;
 
-                current++;
+            let charIndex = 0;
 
-                if (current < messages.length) {
+            function typeMessage() {
 
-                    introText.textContent = messages[current];
-
-                } else {
-
-                    clearInterval(interval);
+                if (messageIndex >= messages.length) {
 
                     introText.innerHTML =
                     '<span id="enter-archive">ENTER ARCHIVE</span>';
 
                     document.getElementById("enter-archive")
                     .addEventListener("click", () => {
+
                         document.getElementById("intro-screen").style.display = "none";
+
                         document.getElementById("website-content").style.display = "block";
+
                         document.body.style.overflow = "auto";
+
                     });
 
+                    return;
                 }
 
-            }, 2500);
+                const currentMessage = messages[messageIndex];
 
-        </script>  
+                introText.innerHTML =
+                    currentMessage.substring(0, charIndex) +
+                    '<span class="cursor">|</span>';
+
+                charIndex++;
+
+                if (charIndex <= currentMessage.length) {
+
+                    setTimeout(typeMessage, 40);
+
+                } else {
+
+                    setTimeout(() => {
+
+                        charIndex = 0;
+
+                        messageIndex++;
+
+                        typeMessage();
+
+                    }, 1800);
+                }
+            }
+
+            typeMessage();
+
+        </script>
 
         <script>
 
             document.getElementById("skip-intro")
             .addEventListener("click", () => {
-
-                clearInterval(interval);
 
                 document.getElementById("intro-screen").style.display = "none";
 
@@ -496,6 +691,67 @@
 
 
 </div>
+
+        <script>
+
+            const sections = document.querySelectorAll(
+                "#observation, #identification, #transmission, #performance, #archive"
+            );
+
+            const navLinks = document.querySelectorAll(".side-panel a");
+
+            function setActive(id) {
+
+                navLinks.forEach(link => {
+
+                    link.classList.remove("active");
+
+                    if (link.getAttribute("href") === "#" + id) {
+                        link.classList.add("active");
+                    }
+
+                });
+            }
+
+
+            navLinks.forEach(link => {
+
+                link.addEventListener("click", () => {
+
+                    const target = link.getAttribute("href").replace("#", "");
+
+                    setActive(target);
+
+                });
+
+            });
+
+
+            window.addEventListener("scroll", () => {
+
+                let current = "";
+
+                sections.forEach(section => {
+
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+
+                    if (
+                        window.scrollY >= sectionTop - 350 &&
+                        window.scrollY < sectionTop + sectionHeight - 200
+                    ) {
+                        current = section.id;
+                    }
+
+                });
+
+                if (current !== "") {
+                    setActive(current);
+                }
+
+            });
+
+        </script>
 
     </body>
 </html>

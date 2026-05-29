@@ -3,6 +3,11 @@ body {
     padding-top: 70px;
 }
 
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
 img{
     width: 100%;
     display: block;
@@ -48,6 +53,20 @@ img{
 
 body {
     overflow: hidden;
+}
+
+.cursor {
+
+    animation: blinkCursor 1s infinite;
+
+    color: #ff0099;
+}
+
+@keyframes blinkCursor {
+
+    50% {
+        opacity: 0;
+    }
 }
 
 #skip-intro {
@@ -111,15 +130,57 @@ body {
     letter-spacing: 1px;
     text-transform: uppercase;
     z-index: 999;
+    transition: 0.3s;
 }
 
+.side-panel a {
+    color: #e6e6e6;
+    text-decoration: none;
+    font-family: "harm";
+    opacity: 0.4;
+    filter: blur(1.5px);
+    transition: 0.3s;
+}
+
+.side-panel a:visited {
+    color: #e6e6e6;
+}
+
+.side-panel a:hover,
+.side-panel a.active {
+
+    opacity: 1;
+    filter: blur(0);
+    color: #ff0099;
+    letter-spacing: 2px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#observation,
+#identification,
+#transmission,
+#performance,
+#archive {
+
+    scroll-margin-top: 315px;
+}
+
+.center-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
 div.title {
     font-family:"alt" ;
     color: #e6e6e6;
     font-size: 50px;
     text-transform: uppercase;
-    margin-left: 562px;
     margin-top: 300px;
 }
  
@@ -130,8 +191,9 @@ div.box {
     line-height: 30px;
     font-style: italic;
     text-transform: uppercase;
-    margin-left: 450px;
+    margin-left: 850px;
     margin-top: 400px;
+    margin-bottom: 200px;
     
 }
 
@@ -140,8 +202,16 @@ div.item {
     color: #e6e6e6;
     font-family:"harm";
     font-size: 20px;
-    margin-left: 562px;
     text-transform: uppercase;
+    margin-left: -370px;
+}
+
+div.item1 {
+    color: #e6e6e6;
+    font-family:"harm";
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: -420px;
 }
 
 .pink {
@@ -149,12 +219,12 @@ div.item {
     
 }
 
-div.item1 {
+div.item2 {
     color: #e6e6e6;
     font-family:"harm";
     font-size: 20px;
-    margin-left: 980px;
     text-transform: uppercase;
+    margin-left: 420px;
 }
 
 .eyeimg img {
@@ -199,7 +269,7 @@ div.quote {
     text-transform: uppercase;
     line-height: 0.75;
     text-align: justify;
-    margin-top: 400px;
+    margin-top: 200px;
     padding-left: 130px;
     padding-right: 400px;
 }
@@ -235,7 +305,7 @@ div.box1 {
     font-style: italic;
     text-transform: uppercase;
     margin-left: 130px;
-    margin-top: 200px;
+    margin-top: 100px;
     
 }
 
@@ -331,11 +401,28 @@ div.eyeimg4 {
     
 }
 
+#camToggle {
+    width: 800px;  
+    height: auto;
+    cursor: pointer;
+    filter: drop-shadow(0 0 0 transparent);
+}
+
+#camToggle:hover {
+    filter: drop-shadow(0 0 5px #ff0099);
+}
+
+#camToggle.phone {
+    width: 500px;
+  margin-top: -56px;
+  margin-left: -100px;
+}
 
 div.eyeimg5 {
     width: 7%;
     height: auto;
     margin-top: 300px;
+    margin-left: 200px;
     
 }
 
@@ -348,6 +435,7 @@ div.box07 {
     font-style: italic;
     text-transform: uppercase;
     margin-left: 1400px;
+    margin-top: -100px;
 
 }
 
@@ -366,7 +454,8 @@ div.box7 {
 .cctv-wrapper {
     position: relative;
     width: 100%;
-    margin-top: 200px; 
+    margin-top: 200px;
+    overflow: hidden;  
 }
 
 .cctv-bg {
@@ -456,7 +545,7 @@ div.box10 {
     line-height: 30px;
     font-style: italic;
     text-transform: uppercase;
-    margin-top: -450px;
+    margin-top: -480px;
     margin-left: 130px;
 
 }
@@ -481,26 +570,28 @@ div.text-section {
 div.survtext {
     color: #e6e6e6;
     font-family:"harm";
-    font-size: 30px;
+    font-size: 15px;
     text-indent: 40px;
     line-height: 1.5; 
     text-align: justify;
-    margin-top: 300px;
+    margin-top: 50px;
     margin-bottom: 300px;
-    margin-left: 700px;
+    margin-left: 130px;
     margin-right: 100px;
+    max-width: 320px;
+    letter-spacing: 0.5px;
 
 }
 
 div.side-note {
     position: absolute;
-    margin-left: 1620px;
-    margin-top: 15px;
+    margin-left: 470px;
+    margin-top: 5px;
     top: 0;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     font-family: "harm";
-    font-size: 14px;
+    font-size: 10px;
     color: #e6e6e6;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -510,8 +601,8 @@ div.side-note {
 div.eyeimg6 {
     width: 7%;
     height: auto;
-    margin-top: -360px;
-    margin-left: 1000px;
+    margin-left: 300px;
+    margin-top: 50px;
 }
 
 div.codeimg {
@@ -528,7 +619,7 @@ div.box12 {
     font-style: italic;
     text-transform: uppercase;
     margin-top: 200px;
-    margin-left: 450px;
+    margin-left: 850px;
    
 }
 
@@ -603,7 +694,6 @@ div.box12 {
   transform: translateZ(0);
 }
 
-
 .quote-container2 {
     position: relative;
 }
@@ -658,6 +748,7 @@ div.box14 {
     margin-left: 850px;
 
 }
+
 
 .eyeimg7 img {
     width: 12%;
@@ -715,26 +806,29 @@ div.text-section2 {
 div.survtext2 {
     color: #e6e6e6;
     font-family:"harm";
-    font-size: 30px;
+    font-size: 15px;
     text-indent: 40px;
     line-height: 1.5; 
     text-align: justify;
     margin-top: 50px;
-    margin-bottom: 100px;
-    margin-left: 700px;
+    margin-bottom: 300px;
+    margin-left: 130px;
     margin-right: 100px;
+    max-width: 320px;
+    letter-spacing: 0.5px;
 
 }
 
+
 div.side-note3 {
     position: absolute;
-    margin-left: 1620px;
-    margin-top: 15px;
+    margin-left: 470px;
+    margin-top: 5px;
     top: 0;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     font-family: "harm";
-    font-size: 14px;
+    font-size: 10px;
     color: #e6e6e6;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -744,8 +838,202 @@ div.side-note3 {
 div.eyeimg9 {
     width: 7%;
     height: auto;
-    margin-top: -160px;
-    margin-left: 1220px;
+    margin-left: 300px;
+    margin-top: 50px;
 }
 
+
+.eyeimg img,
+.eyeimg2 img,
+.eyeimg3 img,
+.eyeimg4 img,
+.eyeimg5 img,
+.eyeimg6 img,
+.eyeimg7 img,
+.eyeimg8 img,
+.eyeimg9 img,
+.eyeimg10 img {
+    animation: eyeFlip 3s infinite steps(1);
+    transform-origin: center;
+}
+
+@keyframes eyeFlip {
+    0% {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(-1);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.eyeimg:hover img,
+.eyeimg2:hover img,
+.eyeimg3:hover img,
+.eyeimg4:hover img,
+.eyeimg5:hover img,
+.eyeimg6:hover img,
+.eyeimg7:hover img,
+.eyeimg8:hover img,
+.eyeimg9:hover img, 
+.eyeimg10:hover img {
+    animation-duration: 0.6s;
+}
+
+.section-text {
+    width: 320px;
+    font-family: "harm";
+    font-size: 15px;
+    color: #e6e6e6;
+    text-transform: none;
+    letter-spacing: 0.5px;
+    margin-top: 200px;
+    margin-left: 130px;
+    text-indent: 40px;
+    line-height: 1.5; 
+    text-align: justify;
+}
+
+#camToggle1 {
+    width: 800px;  
+    height: auto;
+    cursor: pointer;
+    transform: scaleX(-1);
+    margin-left: 900px;
+    margin-top: -700px;
+
+    filter: drop-shadow(0 0 0 transparent);
+}
+
+
+#camToggle1:hover {
+    filter: drop-shadow(0 0 5px #ff0099);
+   
+}
+
+#camToggle1.vlog {
+    width: 800px;
+    margin-top: -951.5px;
+}
+
+div.box16 {
+    font-family:"harm";
+    color: #e6e6e6;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-left: 850px;
+    margin-top: 100px;
+    
+}
+
+.detect-box {
+    position: absolute;
+    border: 2px solid red;
+    box-shadow: 0 0 10px red;
+    animation: detectMove 6s infinite steps(1);
+}
+
+.box-a {
+    width: 180px;
+    height: 180px;
+    animation-delay: 0s;
+}
+
+.box-b {
+    width: 140px;
+    height: 140px;
+    animation-delay: 2s;
+}
+
+.box-c {
+    width: 160px;
+    height: 160px;
+    animation-delay: 4s;
+}
+
+@keyframes detectMove {
+
+    0% {
+        top: 120px;
+        left: 240px;
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    20% {
+        top: 300px;
+        left: 700px;
+    }
+
+    40% {
+        top: 150px;
+        left: 1100px;
+    }
+
+    60% {
+        top: 500px;
+        left: 400px;
+    }
+
+    80% {
+        top: 350px;
+        left: 900px;
+    }
+
+    100% {
+        top: 120px;
+        left: 240px;
+        opacity: 0;
+    }
+}
+
+.termination-screen {
+    margin-top: 150px;
+    margin-bottom: 400px;
+}
+
+.termination-title {
+    font-family: "alt";
+    color: #e6e6e6;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.termination-file {
+    color: #e6e6e6;
+    font-family: "harm";
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: -505px;
+}
+
+.termination-status {
+    color: #ff0099;
+    font-family: "harm";
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: -225px;
+}
+
+.termination-date {
+    color: #e6e6e6;
+    font-family:"harm";
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 520px;
+}
+
+.eyeimg10 img {
+    width: 8%;
+    height: auto;
+    margin-left: 1200px;
+    margin-top: 150px;
+}
 
